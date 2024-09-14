@@ -32,6 +32,10 @@ def projects():
 def chiefs():
     return render_template('chiefs.html', this_year=this_year)
 
+@app.route("/football")
+def football():
+    return render_template('football.html', this_year=this_year)
+
 
 if __name__ == "__main__":
     app.run(debug=True)
