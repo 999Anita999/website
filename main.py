@@ -24,6 +24,18 @@ def experience():
 def travel():
     return render_template('travel.html', this_year=this_year)
 
+@app.route("/travel/norway")
+def norway():
+    return render_template('norway.html', this_year=this_year)
+
+@app.route("/travel/argentina")
+def argentina():
+    return render_template('argentina.html', this_year=this_year)
+
+@app.route("/travel/alaska")
+def alaska():
+    return render_template('alaska.html', this_year=this_year)
+
 @app.route("/projects")
 def projects():
     return render_template('projects.html', this_year=this_year)
