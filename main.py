@@ -11,6 +11,9 @@ this_year = date.today().year
 def home_page():
     return render_template('index.html', this_year=this_year)
 
+@app.route("/personal")
+def personal():
+    return render_template('home_personal.html', this_year=this_year)
 
 @app.route("/portfolio")
 def portfolio():
@@ -38,7 +41,7 @@ def alaska():
 
 @app.route("/projects")
 def projects():
-    return render_template('projects.html', this_year=this_year)
+    return render_template('home_decorating.html', this_year=this_year)
 
 @app.route("/chiefs")
 def chiefs():
