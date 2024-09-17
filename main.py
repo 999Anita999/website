@@ -6,6 +6,7 @@ app = Flask(__name__)
 
 this_year = date.today().year
 
+# Note: color pallet https://colorhunt.co/palette/7c93c355679c1e2a5ee1d7b7
 
 @app.route("/")
 def home_page():
@@ -53,4 +54,4 @@ def football():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(debug=False)
