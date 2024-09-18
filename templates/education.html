@@ -1,0 +1,54 @@
+{% include "header.html" %}
+
+<!--    TODO: Add experience - this whole page-->
+
+<main>
+  <div class="container py-4">
+    <div class="mb-4 rounded-3" style="background-color: rgb(85, 103, 156);">
+      <div class="container-fluid py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-1">
+          <div class="col-10 col-sm-6 col-lg-4">
+            <img src="/static/assets/anita_circle3.png" class="d-block mx-lg-auto img-fluid pe-3 align-center" alt="Anita Gandhi" width="400" loading="lazy">
+          </div>
+        <div class="col-lg-8">
+          <h1 class="display-5 fw-bold text-white lh-1 mb-3 ms-5">Anita Gandhi</h1>
+          <p class="lead text-white ms-5">Dynamic professional with 15 years of experience in Research,
+            Performance Analysis, and Business Insights. Skilled in using advanced analytics tools
+            to convert data into actionable insights and drive organizational impact.
+            Expert in sophisticated analyses to address strategic and operational challenges,
+            influencing decision-making and performance.</p>
+          <a href="{{ url_for('experience') }}" class="btn btn-outline-light btn-lg px-4 me-md-2 ms-5 text-white"
+             >Experience</a>
+          <a href="{{ url_for('education') }}" class="btn btn-lg px-4 me-md-2"
+             style="background-color: rgb(225, 215, 183);">Education</a>
+<!--            <button class="btn btn-secondary btn-lg text-secondary ms-5"
+                 style="background-color: rgb(225, 215, 183);" type="button">Example button</button>-->
+        </div>
+      </div>
+     </div>
+    </div>
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 rounded-3" style="background-color: rgb(30, 42, 94); color: rgb(225, 215, 183)">
+          <h2><img src="static/assets/university-of-chicago-logo-0F38E68A5B-seeklogo.com.png" height="50"
+                   alt="University of Chicago">  BA</h2>
+          <p><h5>University of Chicago</h5></p>
+           <p><h7>Chicago, IL [October 1989 - June 1993]</h7></p>
+          <p>Major in Economics</p>
+<!--          <button class="btn btn-outline-light" type="button">Example button</button>-->
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="h-100 p-5 border rounded-3" style="background-color: rgb(30, 42, 94); color: rgb(225, 215, 183)">
+          <h2><img src="static/assets/stern.png" height="50" alt="NYU Stern">  MBA</h2>
+          <p><h5>NYU Stern School of Business</h5></p>
+           <p><h7>New York, NY [September 1997 - June 1999]</h7></p>
+          <p>Emphasis on Marketing and Information Systems</p>
+<!--          <button class="btn btn-outline-secondary" type="button">Example button</button>-->
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{% include "footer.html" %}

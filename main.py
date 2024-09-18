@@ -24,6 +24,10 @@ def portfolio():
 def experience():
     return render_template('experience.html', this_year=this_year)
 
+@app.route("/education")
+def education():
+    return render_template('education.html', this_year=this_year)
+
 @app.route("/travel")
 def travel():
     return render_template('travel.html', this_year=this_year)
