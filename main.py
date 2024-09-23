@@ -32,17 +32,29 @@ def education():
 def travel():
     return render_template('travel.html', this_year=this_year)
 
-@app.route("/travel/norway")
+@app.route("/norway")
 def norway():
     return render_template('norway.html', this_year=this_year)
 
-@app.route("/travel/argentina")
+@app.route("/argentina")
 def argentina():
     return render_template('argentina.html', this_year=this_year)
 
-@app.route("/travel/alaska")
+@app.route("/alaska")
 def alaska():
     return render_template('alaska.html', this_year=this_year)
+
+@app.route("/portugal")
+def portugal():
+    return render_template('portugal.html', this_year=this_year)
+
+@app.route("/new_zealand")
+def new_zealand():
+    return render_template('new_zealand.html', this_year=this_year)
+
+@app.route("/georgia_romania")
+def georgia_romania():
+    return render_template('georgia_romania.html', this_year=this_year)
 
 @app.route("/projects")
 def projects():
